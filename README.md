@@ -1,8 +1,7 @@
 # DevOps Practices
 
 
-### Monitoring 🖥
-
+### Monitoring ⚠️
 #### Kubernetes 🕸
 - Basic Grafana Setup
 
@@ -10,3 +9,5 @@
 - Basic Grafana Setup
 
 #### Linux 🐧
+
+### Networking 🖥
