@@ -11,3 +11,5 @@
 #### Linux 🐧
 
 ### Networking 🖥
+#### Kubernetes 🕸
+- Baremetal CNI Setup with Cilium
