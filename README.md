@@ -7,3 +7,4 @@
 - Basic Grafana Setup
 
 #### Docker 🐳
+- Basic Grafana Setup
