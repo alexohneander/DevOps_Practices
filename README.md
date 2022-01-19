@@ -2,4 +2,6 @@
 
 
 ### Monitoring 🖥
- - Basic Grafana Setup
+
+#### Kubernetes 🕸
+- Basic Grafana Setup
