@@ -3,10 +3,10 @@
 
 ### Monitoring ⚠️
 #### Kubernetes 🕸
-- Basic Grafana Setup
+- [Basic Grafana Setup](Exercises/Monitoring/Kubernetes/basic-grafana-setup.md)
 
 #### Docker 🐳
-- Basic Grafana Setup
+- [Basic Grafana Setup](Exercises/Monitoring/Docker/basic-grafana-setup.md)
 
 #### Linux 🐧
 
