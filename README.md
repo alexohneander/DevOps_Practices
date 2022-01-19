@@ -13,3 +13,7 @@
 ### Networking 🖥
 #### Kubernetes 🕸
 - Baremetal CNI Setup with Cilium
+
+### Hosting 🔌
+#### Kubernetes 🕸
+- Baremetal Kubernetes Setup with k3s
