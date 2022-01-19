@@ -8,3 +8,5 @@
 
 #### Docker 🐳
 - Basic Grafana Setup
+
+#### Linux 🐧
