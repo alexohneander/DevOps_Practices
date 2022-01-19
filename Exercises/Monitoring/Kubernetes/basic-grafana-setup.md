@@ -2,7 +2,7 @@
 Let's get started with the setup.
 
 ## Deployment
-**Namespace: **
+**Namespace:**
 ```yaml
 apiVersion: v1
 kind: Namespace
