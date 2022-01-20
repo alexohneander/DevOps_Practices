@@ -14,3 +14,7 @@
 ### Hosting 🔌
 #### Kubernetes 🕸
 - Baremetal Kubernetes Setup with k3s
+
+### Backup 💾
+#### Kubernetes 🕸
+- [Backup full Namespaces with Velero](Exercises/Backup/Kubernetes/backup-full-namespaces-with-velero.md)
