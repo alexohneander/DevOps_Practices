@@ -104,3 +104,38 @@ spec:
   version: v2.22.1
   serviceMonitorSelector: {}
 ```
+
+##### Service
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: prometheus
+  labels:
+    app: prometheus
+spec:
+  ports:
+  - name: web
+    port: 9090
+    targetPort: web
+  selector:
+    app: prometheus
+  sessionAffinity: ClientIP
+```
+
+##### Service Monitor
+```yaml
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: prometheus-self
+  labels:
+    app: prometheus
+spec:
+  endpoints:
+  - interval: 30s
+    port: web
+  selector:
+    matchLabels:
+      app: prometheus
+```
