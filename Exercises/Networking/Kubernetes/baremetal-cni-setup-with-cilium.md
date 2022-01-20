@@ -11,6 +11,32 @@ Once the network configuration type is specified, the runtime defines a network 
 In addition to Kubernetes networking, CNI also supports Kubernetes-based platforms like OpenShift to provide a unified container communication across the cluster through software-defined networking (SDN) approach.
 
 ### What is Cilium?
-Cilium is an open source project to provide networking, security, and observability for cloud native environments such as Kubernetes clusters and other container orchestration platforms.
+Cilium is an open-source, highly scalable Kubernetes CNI solution developed by Linux kernel developers. Cilium secures network connectivity between Kubernetes services by adding high-level application rules utilizing eBPF filtering technology. Cilium is deployed as a daemon `cilium-agent` on each node of the Kubernetes cluster to manage operations and translates the network definitions to eBPF programs.
 
-At the foundation of Cilium is a new Linux kernel technology called eBPF, which enables the dynamic insertion of powerful security, visibility, and networking control logic into the Linux kernel. eBPF is used to provide high-performance networking, multi-cluster and multi-cloud capabilities, advanced load balancing, transparent encryption, extensive network security capabilities, transparent observability, and much more.
+The communication between pods happens over an overlay network or utilizing a routing protocol. Both IPv4 and IPv6 addresses are supported for cases. Overlay network implementation utilizes VXLAN tunneling for packet encapsulation while native routing happens through unencapsulated BGP protocol.
+
+Cilium can be used with multiple Kubernetes clusters and can provide multi CNI features, a high level of inspection,pod-to-pod connectivity across all clusters.
+
+Its network and application layer awareness manages packet inspection, and the application protocol packets are using.
+
+Cilium also has support for Kubernetes Network Policies through HTTP request filters. The policy configuration can be written into a YAML or JSON file and offers both ingress and egress enforcements. Admins can accept or reject requests based on the request method or path header while integrating policies with service mesh like Istio.
+
+### Preparation
+For the installation we need the CLI from Cilium.
+We can install this with the following commands:
+
+**Mac OSx**
+```bash
+curl -L --remote-name-all https://github.com/cilium/cilium-cli/releases/latest/download/cilium-darwin-amd64.tar.gz{,.sha256sum}
+shasum -a 256 -c cilium-darwin-amd64.tar.gz.sha256sum
+sudo tar xzvfC cilium-darwin-amd64.tar.gz /usr/local/bin
+rm cilium-darwin-amd64.tar.gz{,.sha256sum}
+```
+
+**Linux**
+```bash
+curl -L --remote-name-all https://github.com/cilium/cilium-cli/releases/latest/download/cilium-linux-amd64.tar.gz{,.sha256sum}
+sha256sum --check cilium-linux-amd64.tar.gz.sha256sum
+sudo tar xzvfC cilium-linux-amd64.tar.gz /usr/local/bin
+rm cilium-linux-amd64.tar.gz{,.sha256sum}
+```
