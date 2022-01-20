@@ -3,7 +3,7 @@
 
 ### Monitoring ⚠️
 #### Kubernetes 🕸
-- [Monitoring Setup with Prometheus Operator](Exercises/Monitoring/Kubernetes/monitoring-setup-with-prometheus-operator.md)
+- [Monitoring Setup with Prometheus-Operator](Exercises/Monitoring/Kubernetes/monitoring-setup-with-prometheus-operator.md)
 
 #### Linux 🐧
 
