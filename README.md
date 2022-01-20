@@ -18,3 +18,4 @@
 ### Backup 💾
 #### Kubernetes 🕸
 - [Backup full Namespaces with Velero](Exercises/Backup/Kubernetes/backup-full-namespaces-with-velero.md)
+- [Backup MySQL Databases in Kubernetes with CronJobs](Exercises/Backup/Kubernetes/backup-mysql-databases-in-kubernetes.md)
