@@ -3,7 +3,7 @@
 
 ### Monitoring ⚠️
 #### Kubernetes 🕸
-- [Basic Grafana Setup](Exercises/Monitoring/Kubernetes/basic-grafana-setup.md)
+- [Monitoring Setup with Prometheus Operator](Exercises/Monitoring/Kubernetes/monitoring-setup-with-prometheus-operator.md)
 
 #### Docker 🐳
 - [Basic Grafana Setup](Exercises/Monitoring/Docker/basic-grafana-setup.md)
