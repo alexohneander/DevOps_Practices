@@ -12,7 +12,7 @@
 
 ### Networking 🖥
 #### Kubernetes 🕸
-- Baremetal CNI Setup with Cilium
+- [Baremetal CNI Setup with Cilium](Exercises/Networking/Kubernetes/baremetal-cni-setup-with-cilium.md)
 
 ### Hosting 🔌
 #### Kubernetes 🕸
