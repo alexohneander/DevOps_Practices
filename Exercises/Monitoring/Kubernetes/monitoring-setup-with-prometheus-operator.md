@@ -1,4 +1,4 @@
-# Basic Grafana Setup
+# Monitoring Setup with Prometheus-Operator
 Let's get started with the setup.
 
 ## Deployment
