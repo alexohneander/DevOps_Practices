@@ -55,3 +55,35 @@ cilium install
 ```
 
 If the installation fails for some reason, run `cilium status` to retrieve the overall status of the Cilium deployment and inspect the logs of whatever pods are failing to be deployed.
+
+### Validate the Installation
+To validate that Cilium has been properly installed, you can run
+```bash
+$ cilium status --wait
+   /¯¯\
+/¯¯\__/¯¯\    Cilium:         OK
+\__/¯¯\__/    Operator:       OK
+/¯¯\__/¯¯\    Hubble:         disabled
+\__/¯¯\__/    ClusterMesh:    disabled
+   \__/
+
+DaemonSet         cilium             Desired: 2, Ready: 2/2, Available: 2/2
+Deployment        cilium-operator    Desired: 2, Ready: 2/2, Available: 2/2
+Containers:       cilium-operator    Running: 2
+                  cilium             Running: 2
+Image versions    cilium             quay.io/cilium/cilium:v1.9.5: 2
+                  cilium-operator    quay.io/cilium/operator-generic:v1.9.5: 2
+```
+
+Run the following command to validate that your cluster has proper network connectivity:
+```bash
+$ cilium connectivity test
+ℹ️  Monitor aggregation detected, will skip some flow validation steps
+✨ [k8s-cluster] Creating namespace for connectivity check...
+(...)
+---------------------------------------------------------------------------------------------------------------------
+📋 Test Report
+---------------------------------------------------------------------------------------------------------------------
+✅ 69/69 tests successful (0 warnings)
+```
+Congratulations! You have a fully functional Kubernetes cluster with Cilium. 🎉
