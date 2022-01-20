@@ -53,3 +53,5 @@ Install Cilium into the Kubernetes cluster pointed to by your current kubectl co
 ```bash
 cilium install
 ```
+
+If the installation fails for some reason, run `cilium status` to retrieve the overall status of the Cilium deployment and inspect the logs of whatever pods are failing to be deployed.
