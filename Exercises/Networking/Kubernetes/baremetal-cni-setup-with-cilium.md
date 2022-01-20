@@ -40,3 +40,16 @@ sha256sum --check cilium-linux-amd64.tar.gz.sha256sum
 sudo tar xzvfC cilium-linux-amd64.tar.gz /usr/local/bin
 rm cilium-linux-amd64.tar.gz{,.sha256sum}
 ```
+
+### Install Cilium
+You can install Cilium on any Kubernetes cluster. These are the generic instructions on how to install Cilium into any Kubernetes cluster. The installer will attempt to automatically pick the best configuration options for you.
+
+#### Requirements
+- Kubernetes must be configured to use CNI
+- Linux kernel >= 4.9.17
+
+#### Install
+Install Cilium into the Kubernetes cluster pointed to by your current kubectl context:
+```bash
+cilium install
+```
